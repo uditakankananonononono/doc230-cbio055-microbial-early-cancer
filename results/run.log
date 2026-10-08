@@ -1,0 +1,220 @@
+{'n': 6451, 'n_tumor': 5245, 'n_normal': 1206, 'microbial_auroc': 0.863, 'metadata_disease_center_strategy_auroc': 0.696, 'metadata_center_strategy_only_auroc': 0.612}
+Liver Hepatocellular Carcinoma {'n_tumor': 286, 'n_normal': 72, 'microbial': 0.979, 'meta_center_strategy': 0.531} 0.763
+Head and Neck Squamous Cell Carcinoma {'n_tumor': 138, 'n_normal': 70, 'microbial': 0.919, 'meta_center_strategy': 0.574} 0.721
+Kidney Chromophobe {'n_tumor': 84, 'n_normal': 66, 'microbial': 0.992, 'meta_center_strategy': 0.553} 0.78
+Stomach Adenocarcinoma {'n_tumor': 393, 'n_normal': 113, 'microbial': 0.908, 'meta_center_strategy': 0.563} 0.785
+Colon Adenocarcinoma {'n_tumor': 467, 'n_normal': 70, 'microbial': 0.96, 'meta_center_strategy': 0.563} 0.72
+Thyroid Carcinoma {'n_tumor': 432, 'n_normal': 79, 'microbial': 0.849, 'meta_center_strategy': 0.457} 0.637
+Kidney Renal Papillary Cell Carcinoma {'n_tumor': 214, 'n_normal': 36, 'microbial': 0.952, 'meta_center_strategy': 0.335} 0.897
+Lung Adenocarcinoma {'n_tumor': 523, 'n_normal': 134, 'microbial': 0.895, 'meta_center_strategy': 0.661} 0.747
+Lung Squamous Cell Carcinoma {'n_tumor': 437, 'n_normal': 81, 'microbial': 0.967, 'meta_center_strategy': 0.632} 0.907
+Kidney Renal Clear Cell Carcinoma {'n_tumor': 610, 'n_normal': 110, 'microbial': 0.984, 'meta_center_strategy': 0.618} 0.893
+Breast Invasive Carcinoma {'n_tumor': 920, 'n_normal': 129, 'microbial': 0.958, 'meta_center_strategy': 0.467} 0.826
+Bladder Urothelial Carcinoma {'n_tumor': 172, 'n_normal': 48, 'microbial': 0.845, 'meta_center_strategy': 0.695} 0.764
+Rectum Adenocarcinoma {'n_tumor': 157, 'n_normal': 15, 'microbial': 0.937, 'meta_center_strategy': 0.294} 0.92
+Esophageal Carcinoma {'n_tumor': 139, 'n_normal': 37, 'microbial': 0.859, 'meta_center_strategy': 0.633} 0.703
+{
+ "d1": {
+  "n_samples": 17625,
+  "n_genera": 1287,
+  "early_primary": 5492,
+  "late_primary": 3445,
+  "solid_normal": 1206,
+  "blood_normal": 1866,
+  "solid_normal_by_type": {
+   "Lung Adenocarcinoma": 134,
+   "Breast Invasive Carcinoma": 129,
+   "Stomach Adenocarcinoma": 113,
+   "Kidney Renal Clear Cell Carcinoma": 110,
+   "Lung Squamous Cell Carcinoma": 81,
+   "Thyroid Carcinoma": 79,
+   "Liver Hepatocellular Carcinoma": 72,
+   "Head and Neck Squamous Cell Carcinoma": 70,
+   "Colon Adenocarcinoma": 70,
+   "Prostate Adenocarcinoma": 67,
+   "Kidney Chromophobe": 66,
+   "Bladder Urothelial Carcinoma": 48,
+   "Esophageal Carcinoma": 37,
+   "Kidney Renal Papillary Cell Carcinoma": 36,
+   "Uterine Corpus Endometrial Carcinoma": 33,
+   "Ovarian Serous Cystadenocarcinoma": 15,
+   "Rectum Adenocarcinoma": 15,
+   "Cholangiocarcinoma": 9,
+   "Sarcoma": 7,
+   "Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma": 5,
+   "Pancreatic Adenocarcinoma": 4,
+   "Pheochromocytoma and Paraganglioma": 3,
+   "Thymoma": 2,
+   "Skin Cutaneous Melanoma": 1
+  },
+  "early_by_type_with_normals": {
+   "Breast Invasive Carcinoma": 920,
+   "Kidney Renal Clear Cell Carcinoma": 610,
+   "Lung Adenocarcinoma": 523,
+   "Colon Adenocarcinoma": 467,
+   "Lung Squamous Cell Carcinoma": 437,
+   "Thyroid Carcinoma": 432,
+   "Stomach Adenocarcinoma": 393,
+   "Liver Hepatocellular Carcinoma": 286,
+   "Kidney Renal Papillary Cell Carcinoma": 214,
+   "Bladder Urothelial Carcinoma": 172,
+   "Pancreatic Adenocarcinoma": 168,
+   "Rectum Adenocarcinoma": 157,
+   "Esophageal Carcinoma": 139,
+   "Head and Neck Squamous Cell Carcinoma": 138,
+   "Kidney Chromophobe": 84,
+   "Skin Cutaneous Melanoma": 77,
+   "Cholangiocarcinoma": 28
+  }
+ },
+ "d2": {
+  "n": 6451,
+  "n_tumor": 5245,
+  "n_normal": 1206,
+  "microbial_auroc": 0.863,
+  "metadata_disease_center_strategy_auroc": 0.696,
+  "metadata_center_strategy_only_auroc": 0.612
+ },
+ "d2_gate": true,
+ "d9": {
+  "mean_pairwise_jaccard_top20": 0.437,
+  "genera_in_all_5_folds": [
+   "k__Bacteria.p__Proteobacteria.c__Alphaproteobacteria.o__Rickettsiales.f__Anaplasmataceae.g__Anaplasma",
+   "k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.g__Acidibacillus",
+   "k__Bacteria.p__Planctomycetes.c__Planctomycetia.o__Planctomycetales.f__Planctomycetaceae.g__Gemmata",
+   "k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Chromatiales.f__Chromatiaceae.g__Marichromatium",
+   "k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Aeromonadales.f__Succinivibrionaceae.g__Succinimonas",
+   "k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Legionellales.f__Legionellaceae.g__Legionella",
+   "k__Viruses.o__Herpesvirales.f__Herpesviridae.g__Lymphocryptovirus",
+   "k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Chromatiales.f__Ectothiorhodospiraceae.g__Thiorhodospira",
+   "k__Viruses.f__Virgaviridae.g__Pecluvirus"
+  ]
+ },
+ "d7_shuffle_auroc": 0.498,
+ "d3": {
+  "Liver Hepatocellular Carcinoma": {
+   "n_tumor": 286,
+   "n_normal": 72,
+   "microbial": 0.979,
+   "meta_center_strategy": 0.531
+  },
+  "Head and Neck Squamous Cell Carcinoma": {
+   "n_tumor": 138,
+   "n_normal": 70,
+   "microbial": 0.919,
+   "meta_center_strategy": 0.574
+  },
+  "Kidney Chromophobe": {
+   "n_tumor": 84,
+   "n_normal": 66,
+   "microbial": 0.992,
+   "meta_center_strategy": 0.553
+  },
+  "Stomach Adenocarcinoma": {
+   "n_tumor": 393,
+   "n_normal": 113,
+   "microbial": 0.908,
+   "meta_center_strategy": 0.563
+  },
+  "Colon Adenocarcinoma": {
+   "n_tumor": 467,
+   "n_normal": 70,
+   "microbial": 0.96,
+   "meta_center_strategy": 0.563
+  },
+  "Thyroid Carcinoma": {
+   "n_tumor": 432,
+   "n_normal": 79,
+   "microbial": 0.849,
+   "meta_center_strategy": 0.457
+  },
+  "Kidney Renal Papillary Cell Carcinoma": {
+   "n_tumor": 214,
+   "n_normal": 36,
+   "microbial": 0.952,
+   "meta_center_strategy": 0.335
+  },
+  "Lung Adenocarcinoma": {
+   "n_tumor": 523,
+   "n_normal": 134,
+   "microbial": 0.895,
+   "meta_center_strategy": 0.661
+  },
+  "Lung Squamous Cell Carcinoma": {
+   "n_tumor": 437,
+   "n_normal": 81,
+   "microbial": 0.967,
+   "meta_center_strategy": 0.632
+  },
+  "Kidney Renal Clear Cell Carcinoma": {
+   "n_tumor": 610,
+   "n_normal": 110,
+   "microbial": 0.984,
+   "meta_center_strategy": 0.618
+  },
+  "Breast Invasive Carcinoma": {
+   "n_tumor": 920,
+   "n_normal": 129,
+   "microbial": 0.958,
+   "meta_center_strategy": 0.467
+  },
+  "Bladder Urothelial Carcinoma": {
+   "n_tumor": 172,
+   "n_normal": 48,
+   "microbial": 0.845,
+   "meta_center_strategy": 0.695
+  },
+  "Rectum Adenocarcinoma": {
+   "n_tumor": 157,
+   "n_normal": 15,
+   "microbial": 0.937,
+   "meta_center_strategy": 0.294
+  },
+  "Esophageal Carcinoma": {
+   "n_tumor": 139,
+   "n_normal": 37,
+   "microbial": 0.859,
+   "meta_center_strategy": 0.633
+  }
+ },
+ "d4": {
+  "per_type": {
+   "Liver Hepatocellular Carcinoma": 0.763,
+   "Head and Neck Squamous Cell Carcinoma": 0.721,
+   "Kidney Chromophobe": 0.78,
+   "Stomach Adenocarcinoma": 0.785,
+   "Colon Adenocarcinoma": 0.72,
+   "Thyroid Carcinoma": 0.637,
+   "Kidney Renal Papillary Cell Carcinoma": 0.897,
+   "Lung Adenocarcinoma": 0.747,
+   "Lung Squamous Cell Carcinoma": 0.907,
+   "Kidney Renal Clear Cell Carcinoma": 0.893,
+   "Breast Invasive Carcinoma": 0.826,
+   "Bladder Urothelial Carcinoma": 0.764,
+   "Rectum Adenocarcinoma": 0.92,
+   "Esophageal Carcinoma": 0.703
+  },
+  "mean": 0.79
+ },
+ "d4_gate_mean_ge_0.70": true,
+ "d5": {
+  "n_train": 3842,
+  "n_test": 5878,
+  "microbial": 0.857,
+  "metadata": 0.627
+ },
+ "d6": {
+  "n": 5492,
+  "n_classes": 21,
+  "macroF1_microbial": 0.583,
+  "macroF1_center_strategy_only": 0.093,
+  "majority_acc": 0.168
+ },
+ "d10": {
+  "n_tumor": 5492,
+  "n_blood_normal": 1866,
+  "microbial": 0.906,
+  "meta": 0.968,
+  "note": "confounded: different tissue and sample type"
+ }
+}
