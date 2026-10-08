@@ -4,3 +4,5 @@ Q1 Leave-one-sequencing-center-out: train on all other data_submitting_centers, 
 Q2 Within-stratum evaluation: using pooled grouped 5-fold CV predictions (as D2), compute AUROC separately within each (disease_type x center x strategy) stratum with >= 15 tumors and >= 15 normals; report the case-weighted mean. Pre-specified: signal is not an artifact of between-stratum batch if mean >= 0.70.
 Q3 Extended metadata baseline: one-hot disease_type + center + strategy + tissue_source_site_label + portion_ffpe + analyte_type_label + platform, same CV. Pre-specified: original D2 gate (microbial >= 0.80 and >= extended baseline + 0.05) is re-evaluated against the extended baseline.
 If any pre-specified bar is missed, D2's "gate MET" is downgraded in README/RESULTS (stated as "met against a weak baseline, not robust"). Contamination (Gihawi 2023) cannot be tested without raw reads and stays an open limit.
+
+Note (before Q3 ran): the column is named portion_is_ffpe in the metadata; the first run of audit.py failed on the name after Q1 and Q2 had completed; Q3 uses portion_is_ffpe. Q1 and Q2 results are unchanged by this.

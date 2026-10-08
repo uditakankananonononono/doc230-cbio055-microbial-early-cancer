@@ -31,7 +31,7 @@ for c in sorted(set(cen)):
         mdl=lr(Xs[~te],yy[~te]); q1.append((c,int(te.sum()),float(roc_auc_score(yy[te],mdl.decision_function(Xs[te])))))
 R['Q1']=dict(centers=q1,mean_auroc=float(np.mean([r[2] for r in q1])) if q1 else None); print('Q1',R['Q1'],flush=True)
 # Q3
-cols=['disease_type','data_submitting_center_label','experimental_strategy','tissue_source_site_label','portion_ffpe','analyte_type_label','platform']
+cols=['disease_type','data_submitting_center_label','experimental_strategy','tissue_source_site_label','portion_is_ffpe','analyte_type_label','platform']
 M=OneHotEncoder(handle_unknown='ignore').fit_transform(mm[cols].astype(str)); pm=np.zeros(len(ii))
 for tr,te in GroupKFold(5).split(ii,yy,g): pm[te]=lr(M[tr],yy[tr]).decision_function(M[te])
 R['Q3']=dict(extended_meta_auroc=float(roc_auc_score(yy,pm)),microbial_auroc=R['D2_repro_auroc']); R['Q3']['gate_met']=bool(R['D2_repro_auroc']>=.8 and R['D2_repro_auroc']>=R['Q3']['extended_meta_auroc']+.05); print('Q3',R['Q3'],flush=True)
