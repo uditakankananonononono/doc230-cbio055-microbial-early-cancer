@@ -2,13 +2,5 @@ n 6451 5245
 D2 0.8631401302986181
 Q2 22 0.89161107928396
 Q1 {'centers': [('Baylor College of Medicine', 288, 0.7334083239595051), ('Broad Institute of MIT and Harvard', 220, 0.6718312324929971), ("Canada's Michael Smith Genome Sciences Centre", 494, 0.8883710022572041), ('Harvard Medical School', 486, 0.5555901759530792), ('MD Anderson - Institute for Applied Cancer Science', 113, 0.5566265060240964), ('University of North Carolina', 4734, 0.6027494087214678), ('Washington University School of Medicine', 114, 0.669047619047619)], 'mean_auroc': 0.6682320383508528}
-Traceback (most recent call last):
-  File "/home/sandbox/doc230-cbio055/src/audit.py", line 35, in <module>
-    M=OneHotEncoder(handle_unknown='ignore').fit_transform(mm[cols].astype(str)); pm=np.zeros(len(ii))
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/indexes/base.py", line 6264, in _raise_if_missing
-    raise KeyError(f"{not_found} not in index")
-KeyError: "['portion_ffpe'] not in index"
+Q3 {'extended_meta_auroc': 0.8085022931102352, 'microbial_auroc': 0.8631401302986181, 'gate_met': True}
+done

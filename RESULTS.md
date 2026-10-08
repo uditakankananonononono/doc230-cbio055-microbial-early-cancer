@@ -8,3 +8,10 @@
 - D9 top-20 genera overlap across folds, mean Jaccard 0.44; 9 genera in all folds (listed in json, mostly odd taxa such as Anaplasma, Gemmata, Legionella; no biological claims made).
 - D10 vs blood-derived normal: microbial 0.906 but metadata alone 0.968 - confounded by sample type, not evidence of detection.
 Limits: this is TCGA tissue, not plasma or healthy donors. Tumor and normal differ by tissue handling; Voom-SNM already removed plate/center effects, and the metadata baselines do not capture all batch structure. The Poore dataset is contested for contamination (Gihawi 2023), and the distinguishing genera look contamination-like. Gates being met does not show a clinical early-detection signal. Contamination filtering not run. Replication/audit, no novelty claim.
+
+## Audit (second pass) - D2 gate DOWNGRADED to "met against a weak baseline, not robust"
+Prereg AUDIT_PREREG.md committed before running (one column-name fix noted there; Q1/Q2 unaffected). src/audit.py, results/audit.json, results/audit.log. Data SHA256 re-verified; D2 reproduced exactly (0.8631).
+- Q1 leave-one-center-out (7 centers with enough samples): Baylor 0.733, Broad 0.672, BC Genome Sciences 0.888, Harvard 0.556, MD Anderson 0.557, UNC 0.603 (4,734 samples, 73% of the data), WashU 0.669. Mean 0.668, below the pre-specified 0.70 bar: MISSED. The signal transfers poorly to centers not seen in training (UNC, the largest, 0.60).
+- Q2 within (disease x center x strategy) strata (22 strata with >=15 per class): case-weighted mean AUROC 0.892. Bar (>=0.70) MET: signal is not only between-batch.
+- Q3 extended metadata baseline (adds tissue source site, FFPE, analyte, platform): 0.809 (original baseline 0.696). Microbial 0.863 vs 0.809: the gate (>= baseline + 0.05, i.e. 0.859) is met by a margin of 0.004: fragile, not robust.
+Revised reading: within-batch separation is real (Q2) but a richer batch-aware baseline recovers most of the AUROC (Q3) and cross-center transfer is weak (Q1). D2's "gate MET" now reads "met against a weak baseline, not robust to center hold-out"; D4 and others unchanged. Contamination remains untested. Still not a clinical early-detection signal.

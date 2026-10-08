@@ -1,2 +1,2 @@
 # doc230-cbio055-microbial-early-cancer
-Preregistered audit of tumor-vs-normal separation from TCGA microbial abundances (Poore 2020 data) for early-stage cancers. See PREREG.md, RESULTS.md, src/run.py (needs /tmp/poore/X.npy built from voom.csv; hashes in data_manifest). Gates D2 and D4 met, with strong confound caveats.
+Preregistered audit of tumor-vs-normal separation from TCGA microbial abundances (Poore 2020 data) for early-stage cancers. See PREREG.md, RESULTS.md, src/run.py (needs /tmp/poore/X.npy built from voom.csv; hashes in data_manifest). Gates D2 and D4 met originally; AUDIT: D2 downgraded to "met against a weak baseline, not robust" (extended-baseline margin 0.004, leave-center-out AUROC 0.668), see RESULTS.md. Strong confound caveats.

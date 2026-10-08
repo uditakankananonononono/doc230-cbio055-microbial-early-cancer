@@ -1,0 +1,187 @@
+{
+ "D2_repro_auroc": 0.8631401302986181,
+ "Q2": {
+  "strata": [
+   [
+    "Bladder Urothelial Carcinoma|University of North Carolina|RNA-Seq",
+    153,
+    134,
+    0.9147682639434407
+   ],
+   [
+    "Breast Invasive Carcinoma|University of North Carolina|RNA-Seq",
+    942,
+    829,
+    0.9287551907084983
+   ],
+   [
+    "Breast Invasive Carcinoma|Washington University School of Medicine|WGS",
+    90,
+    74,
+    0.6984797297297298
+   ],
+   [
+    "Colon Adenocarcinoma|Harvard Medical School|WGS",
+    69,
+    50,
+    0.7463157894736842
+   ],
+   [
+    "Colon Adenocarcinoma|University of North Carolina|RNA-Seq",
+    430,
+    389,
+    0.9226910778105211
+   ],
+   [
+    "Esophageal Carcinoma|MD Anderson - Institute for Applied Cancer Science|WGS",
+    50,
+    32,
+    0.5069444444444444
+   ],
+   [
+    "Head and Neck Squamous Cell Carcinoma|University of North Carolina|RNA-Seq",
+    145,
+    101,
+    0.9201170117011701
+   ],
+   [
+    "Kidney Chromophobe|Baylor College of Medicine|WGS",
+    79,
+    38,
+    0.8594351732991015
+   ],
+   [
+    "Kidney Chromophobe|University of North Carolina|RNA-Seq",
+    71,
+    46,
+    0.9208695652173913
+   ],
+   [
+    "Kidney Renal Clear Cell Carcinoma|Baylor College of Medicine|WGS",
+    55,
+    22,
+    0.7355371900826446
+   ],
+   [
+    "Kidney Renal Clear Cell Carcinoma|University of North Carolina|RNA-Seq",
+    657,
+    585,
+    0.9711301044634378
+   ],
+   [
+    "Kidney Renal Papillary Cell Carcinoma|University of North Carolina|RNA-Seq",
+    224,
+    192,
+    0.943359375
+   ],
+   [
+    "Liver Hepatocellular Carcinoma|Baylor College of Medicine|WGS",
+    56,
+    34,
+    0.9117647058823529
+   ],
+   [
+    "Liver Hepatocellular Carcinoma|University of North Carolina|RNA-Seq",
+    302,
+    252,
+    0.8343650793650794
+   ],
+   [
+    "Lung Adenocarcinoma|Broad Institute of MIT and Harvard|WGS",
+    50,
+    32,
+    0.685763888888889
+   ],
+   [
+    "Lung Adenocarcinoma|Harvard Medical School|WGS",
+    138,
+    81,
+    0.6162009963179553
+   ],
+   [
+    "Lung Adenocarcinoma|University of North Carolina|RNA-Seq",
+    469,
+    410,
+    0.9207110376188508
+   ],
+   [
+    "Lung Squamous Cell Carcinoma|Broad Institute of MIT and Harvard|WGS",
+    72,
+    40,
+    0.7531249999999999
+   ],
+   [
+    "Lung Squamous Cell Carcinoma|University of North Carolina|RNA-Seq",
+    446,
+    397,
+    0.9778954402919857
+   ],
+   [
+    "Stomach Adenocarcinoma|Canada's Michael Smith Genome Sciences Centre|RNA-Seq",
+    384,
+    314,
+    0.9190172884440401
+   ],
+   [
+    "Stomach Adenocarcinoma|Harvard Medical School|WGS",
+    92,
+    56,
+    0.7127976190476191
+   ],
+   [
+    "Thyroid Carcinoma|University of North Carolina|RNA-Seq",
+    395,
+    336,
+    0.800595238095238
+   ]
+  ],
+  "n_strata": 22,
+  "weighted_mean_auroc": 0.89161107928396,
+  "min": 0.5069444444444444
+ },
+ "Q1": {
+  "centers": [
+   [
+    "Baylor College of Medicine",
+    288,
+    0.7334083239595051
+   ],
+   [
+    "Broad Institute of MIT and Harvard",
+    220,
+    0.6718312324929971
+   ],
+   [
+    "Canada's Michael Smith Genome Sciences Centre",
+    494,
+    0.8883710022572041
+   ],
+   [
+    "Harvard Medical School",
+    486,
+    0.5555901759530792
+   ],
+   [
+    "MD Anderson - Institute for Applied Cancer Science",
+    113,
+    0.5566265060240964
+   ],
+   [
+    "University of North Carolina",
+    4734,
+    0.6027494087214678
+   ],
+   [
+    "Washington University School of Medicine",
+    114,
+    0.669047619047619
+   ]
+  ],
+  "mean_auroc": 0.6682320383508528
+ },
+ "Q3": {
+  "extended_meta_auroc": 0.8085022931102352,
+  "microbial_auroc": 0.8631401302986181,
+  "gate_met": true
+ }
+}
