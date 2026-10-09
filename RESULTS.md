@@ -1,7 +1,7 @@
 # CBIO055 results (results/results.json, src/run.py, results/run.log). Poore et al. TCGA Kraken Voom-SNM, 17,625 samples, 1,287 genera; 5,492 early (stage I/II) primary tumors, 1,206 solid-tissue normals. Grouped (case) 5-fold CV, L2 logistic regression.
-- D2 pan-cancer early tumor vs solid normal (types that have normals; 5,245 tumors, 1,206 normals): microbial AUROC 0.863; metadata baseline (disease+center+strategy) 0.696; center+strategy only 0.612. Gate (>=0.80 and >= baseline+0.05) MET.
+- D2 pan-cancer early tumor vs solid normal (types that have normals; 5,245 tumors, 1,206 normals): microbial AUROC 0.863; metadata baseline (disease+center+strategy) 0.696; center+strategy only 0.612. Gate (>=0.80 and >= baseline+0.05) MET. [SUPERSEDED by the Audit below: against the extended baseline 0.809 the margin is 0.004 (fragile) and leave-center-out AUROC is 0.668; read as 'met against a weak baseline, not robust'.]
 - D3 within-type CV, 14 cancer types: microbial AUROC 0.845-0.992 (see json); center+strategy-only baseline 0.29-0.70 (near or below chance).
-- D4 leave-one-cancer-type-out mean AUROC 0.79 (range in json; lowest thyroid 0.637, highest rectum 0.92). Gate (>=0.70) MET.
+- D4 leave-one-cancer-type-out mean AUROC 0.79 (range in json; lowest thyroid 0.637, highest rectum 0.92). Gate (>=0.70) MET. [Original reading; see Audit below for the confound-aware revision.]
 - D5 train on late-stage tumor + half of normal cases, test on early tumor + other normal cases: 0.857 (metadata 0.627).
 - D6 21-class cancer type among early tumors: macro-F1 0.583 vs center+strategy-only 0.093 (majority class 16.8%).
 - D7 label shuffle control AUROC 0.498 (no pipeline leakage).
